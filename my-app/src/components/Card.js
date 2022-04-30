@@ -11,7 +11,7 @@ function Card() {
         <div className="card--location--line">
           <p className="card--location--logo-country">
             <span>
-              <img src="./images/icons/location.png" alt="" />
+              <img className="card--location-icon" src="./images/icons/location.png" alt="" />
             </span>
             <span>JAPAN</span>
           </p>
@@ -23,8 +23,8 @@ function Card() {
         </div>
 
 
-        <h1>Mount Fuji</h1>
-        <p>12 Jan, 2021 - 24 Jan, 2021</p>
+        <h1 className="card--maintext">Mount Fuji</h1>
+        <p className="card--dates">12 Jan, 2021 - 24 Jan, 2021</p>
         <p>
           Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters
           (12,380 feet). Mount Fuji is the single most popular tourist site in
