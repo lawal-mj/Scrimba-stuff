@@ -1,5 +1,7 @@
 function Card() {
   return (
+
+    <>
     <div className="card">
       <div className="card--image">
         <img src="./images/a1.png" alt="a1.png" />
@@ -30,6 +32,9 @@ function Card() {
         </p>
       </div>
     </div>
+    <hr />
+
+    </>
   );
 }
 
