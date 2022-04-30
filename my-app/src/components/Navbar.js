@@ -1,12 +1,10 @@
-// import myimage from "../images/a1.png";
-
 function Navbar() {
   return (
-    <div className="navbar">
-      <img src="./images/a1.png" alt="" />
-      <h1>This is the Navbar, bitch</h1>
-    </div>
+     <nav>
+        <img src="./images/icons/globe.png" alt="Globe" />
+        <h1>My Travel Journal</h1>
+     </nav>
   )
-}
 
+}
 export default Navbar;
