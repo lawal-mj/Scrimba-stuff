@@ -1,10 +1,10 @@
-function Card() {
+function Card(props) {
   return (
 
     <>
     <div className="card">
       <div className="card--image">
-        <img src="./images/a1.png" alt="a1.png" />
+        <img src={"./images/" + props.img} alt="a1.png" />
       </div>
 
       <div className="card--body">
@@ -13,7 +13,7 @@ function Card() {
             <span>
               <img className="card--location-icon" src="./images/icons/location.png" alt="" />
             </span>
-            <span>JAPAN</span>
+            <span>{props.country}</span>
           </p>
           <div className="map--link">
           <span>
@@ -23,12 +23,10 @@ function Card() {
         </div>
 
 
-        <h1 className="card--maintext">Mount Fuji</h1>
-        <p className="card--dates">12 Jan, 2021 - 24 Jan, 2021</p>
+        <h1 className="card--maintext">{props.location}</h1>
+        <p className="card--dates">{props.date}</p>
         <p>
-          Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters
-          (12,380 feet). Mount Fuji is the single most popular tourist site in
-          Japan, for both Japanese and foreign tourists.
+          {props.description}
         </p>
       </div>
     </div>
