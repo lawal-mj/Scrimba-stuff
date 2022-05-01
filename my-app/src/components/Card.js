@@ -7,13 +7,19 @@ function Card(props) {
 
     function add() {
       setCount(function(oldCount) {
-        return oldCount + 1
+          return oldCount + 1
+        
       })
     }
 
     function Subtract() {
       setCount(function(oldCount) {
-        return oldCount -1
+        if (oldCount === 0) {
+          return oldCount
+        }else {
+          return oldCount -1
+        }
+
       })
     }
   return (
