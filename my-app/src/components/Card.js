@@ -6,11 +6,15 @@ function Card(props) {
   const [count, setCount] = React.useState(0)
 
     function add() {
-      setCount(count + 1)
+      setCount(function(oldCount) {
+        return oldCount + 1
+      })
     }
 
     function Subtract() {
-      setCount(count - 1)
+      setCount(function(oldCount) {
+        return oldCount -1
+      })
     }
   return (
 
