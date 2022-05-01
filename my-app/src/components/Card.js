@@ -1,4 +1,17 @@
+import React from 'react';
+
+
 function Card(props) {
+
+  const [count, setCount] = React.useState(0)
+
+    function add() {
+      setCount(count + 1)
+    }
+
+    function Subtract() {
+      setCount(count - 1)
+    }
   return (
 
     <>
@@ -27,6 +40,10 @@ function Card(props) {
         <p className="card--dates">{props.item.date}</p>
         <p>
           {props.item.description}
+          <button onClick={Subtract}>Subtract 1</button>
+          <span>{count}</span>
+          <button onClick={add}>Add 1</button>
+          
         </p>
       </div>
     </div>
@@ -37,3 +54,17 @@ function Card(props) {
 }
 
 export default Card;
+
+
+
+// function Example() {
+//   // Declare a new state variable, which we'll call "count"  ;
+//   return (
+//     <div>
+//       <p>You clicked {count} times</p>
+//       <button onClick={() => setCount(count + 1)}>
+//         Click me
+//       </button>
+//     </div>
+//   );
+// }
